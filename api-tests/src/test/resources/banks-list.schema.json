@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "ispb": { "type": "string" },
+      "name": { "type": "string" },
+      "code": { "type": ["integer", "null"] },
+      "fullName": { "type": "string" }
+    },
+    "required": ["ispb", "name", "code", "fullName"]
+  }
+}
