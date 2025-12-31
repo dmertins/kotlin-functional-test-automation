@@ -16,9 +16,10 @@ dependencies {
 }
 
 tasks.test {
-    useJUnitPlatform()
+    outputs.upToDateWhen { false }
     testLogging {
         events(TestLogEvent.FAILED, TestLogEvent.PASSED, TestLogEvent.SKIPPED)
         exceptionFormat = TestExceptionFormat.FULL
     }
+    useJUnitPlatform()
 }
