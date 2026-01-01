@@ -7,3 +7,5 @@ include(
     "playwright-web-tests",
     "selenium-web-tests",
 )
+
+includeBuild("build-logic")
