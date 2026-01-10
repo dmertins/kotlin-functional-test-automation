@@ -3,10 +3,8 @@ plugins {
 }
 
 dependencies {
-    testImplementation(platform("io.rest-assured:rest-assured-bom:5.5.5"))
-    testImplementation("io.rest-assured:rest-assured")
-    testImplementation("io.rest-assured:kotlin-extensions")
-    testImplementation("io.rest-assured:json-schema-validator")
+    testImplementation(platform(libs.rest.assured.bom))
+    testImplementation(libs.bundles.rest.assured)
 
     constraints {
         testImplementation("commons-codec:commons-codec:1.13") {

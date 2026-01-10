@@ -9,10 +9,12 @@ repositories {
     mavenCentral()
 }
 
+val libs = extensions.getByType(VersionCatalogsExtension::class.java).named("libs")
+
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:6.0.1"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    testImplementation(platform(libs.findLibrary("junit-bom").get()))
+    testImplementation(libs.findLibrary("junit-jupiter").get())
+    testRuntimeOnly(libs.findLibrary("junit-platform-launcher").get())
 }
 
 tasks.test {
