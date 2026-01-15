@@ -25,3 +25,9 @@ tasks.test {
     }
     useJUnitPlatform()
 }
+
+tasks.compileTestKotlin {
+    compilerOptions {
+        javaParameters = true
+    }
+}
