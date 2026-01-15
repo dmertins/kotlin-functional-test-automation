@@ -2,6 +2,7 @@
 junit = "6.0.2"
 kotlin = "2.3.0"
 rest-assured = "5.5.5"
+selenium = "4.39.0"
 
 [libraries]
 junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
@@ -11,6 +12,7 @@ rest-assured-bom = { module = "io.rest-assured:rest-assured-bom", version.ref = 
 rest-assured = { module = "io.rest-assured:rest-assured" }
 rest-assured-kotlin-extensions = { module = "io.rest-assured:kotlin-extensions" }
 rest-assured-json-schema-validator = { module = "io.rest-assured:json-schema-validator" }
+selenium = { module = "org.seleniumhq.selenium:selenium-java", version.ref = "selenium" }
 
 [bundles]
 rest-assured = ["rest-assured", "rest-assured-kotlin-extensions", "rest-assured-json-schema-validator"]
