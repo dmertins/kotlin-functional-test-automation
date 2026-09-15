@@ -26,7 +26,7 @@ Running the API tests:
 ```
 
 ### Selenium Web Tests
-The browser in which the tests run is defined through the Gradle Project Property `browser`.
+The browser in which the tests run is defined through the Gradle Project Property `browser`:
 
 | Browser            | Property Value |
 |--------------------|----------------|
@@ -48,4 +48,23 @@ Running the tests in default browser (Chrome):
 Running the tests in a specific browser:
 ```shell
   ./gradlew :selenium-web-tests:test -Pbrowser=firefox
+```
+
+### Playwright Web Tests
+The browser type in which the tests run is defined through the Gradle Project Property `browserType`:
+
+| Browser              | Property Value |
+|----------------------|----------------|
+| Chromium (_default_) | `chromium`     |
+| Firefox              | `firefox`      |
+| WebKit               | `webkit`       |
+
+Running the tests in default browser (Chromium):
+```shell
+  ./gradlew :playwright-web-tests:test
+```
+
+Running the tests in a specific browser:
+```shell
+  ./gradlew :playwright-web-tests:test -PbrowserType=firefox
 ```
