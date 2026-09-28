@@ -51,6 +51,16 @@ Running the tests in a specific browser:
 ```
 
 ### Playwright Web Tests
+Install Playwright browser binaries:
+```shell
+  ./gradlew :playwright-web-tests:playwrightCli --args="install"
+```
+
+Install dependencies to run browsers:
+```shell
+  ./gradlew :playwright-web-tests:playwrightCli --args="install-deps"
+```
+
 The browser type in which the tests run is defined through the Gradle Project Property `browserType`:
 
 | Browser              | Property Value |

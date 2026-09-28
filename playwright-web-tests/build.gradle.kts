@@ -12,3 +12,10 @@ tasks.test {
         systemProperty(browserTypePropertyName, it)
     }
 }
+
+tasks.register<JavaExec>("playwrightCli") {
+    group = "Playwright"
+    description = "Runs the Playwright CLI."
+    classpath(sourceSets["test"].runtimeClasspath)
+    mainClass.set("com.microsoft.playwright.CLI")
+}
