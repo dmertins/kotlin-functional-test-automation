@@ -15,7 +15,12 @@
 [Cucumber](https://cucumber.io/)
 
 ## Requirements
-[JDK](https://adoptium.net/) ≥ 21
+- [JDK](https://adoptium.net/) ≥ 21
+- [Playwright System Requirements](https://playwright.dev/java/docs/intro#system-requirements):
+  - Java 8 or higher.
+  - Windows 11+, Windows Server 2019+ or Windows Subsystem for Linux (WSL).
+  - macOS 14 (Sonoma) or later.
+  - Debian 12 / 13, Ubuntu 22.04 / 24.04 / 26.04 (x86-64 or arm64).
 
 ## Running the Tests
 
