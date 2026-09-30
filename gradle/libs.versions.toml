@@ -1,6 +1,6 @@
 [versions]
 junit = "6.0.2"
-kotlin = "2.3.0"
+kotlin = "2.4.20"
 rest-assured = "5.5.5"
 selenium = "4.39.0"
 playwright = "1.57.0"
