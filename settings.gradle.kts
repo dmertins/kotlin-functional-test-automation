@@ -8,7 +8,9 @@ include(
     "selenium-web-tests",
 )
 
-includeBuild("build-logic")
+pluginManagement {
+    includeBuild("build-logic")
+}
 
 dependencyResolutionManagement {
 
