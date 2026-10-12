@@ -27,7 +27,7 @@
 ### API Tests
 Running the API tests:
 ```shell
-  ./gradlew :api-tests:test
+./gradlew :api-tests:test
 ```
 
 ### Selenium Web Tests
@@ -42,28 +42,28 @@ The browser in which the tests run is defined through the Gradle Project Propert
 
 To enable automation on Safari:
 ```shell
-  safaridriver --enable
+safaridriver --enable
 ```
 
 Running the tests in default browser (Chrome):
 ```shell
-  ./gradlew :selenium-web-tests:test
+./gradlew :selenium-web-tests:test
 ```
 
 Running the tests in a specific browser:
 ```shell
-  ./gradlew :selenium-web-tests:test -Pbrowser=firefox
+./gradlew :selenium-web-tests:test -Pbrowser=firefox
 ```
 
 ### Playwright Web Tests
 Install Playwright browser binaries:
 ```shell
-  ./gradlew :playwright-web-tests:playwrightCli --args="install"
+./gradlew :playwright-web-tests:playwrightCli --args="install"
 ```
 
 Install dependencies to run browsers:
 ```shell
-  ./gradlew :playwright-web-tests:playwrightCli --args="install-deps"
+./gradlew :playwright-web-tests:playwrightCli --args="install-deps"
 ```
 
 The browser type in which the tests run is defined through the Gradle Project Property `browserType`:
@@ -76,10 +76,10 @@ The browser type in which the tests run is defined through the Gradle Project Pr
 
 Running the tests in default browser (Chromium):
 ```shell
-  ./gradlew :playwright-web-tests:test
+./gradlew :playwright-web-tests:test
 ```
 
 Running the tests in a specific browser:
 ```shell
-  ./gradlew :playwright-web-tests:test -PbrowserType=firefox
+./gradlew :playwright-web-tests:test -PbrowserType=firefox
 ```
